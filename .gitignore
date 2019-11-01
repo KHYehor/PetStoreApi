@@ -1,3 +1,7 @@
+# Certificates
+key.pem
+server.crt
+
 # Logs
 logs
 *.log

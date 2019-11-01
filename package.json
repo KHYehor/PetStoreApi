@@ -1,0 +1,39 @@
+{
+  "name": "lab-app",
+  "version": "1.0.0",
+  "description": "My Application for Lab",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "pm2 start -i 8 ecosystem.config.js --env production",
+    "fmt": "prettier --write '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KHYehor/Application.git"
+  },
+  "author": "khilchenko.yehor@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KHYehor/Application/issues"
+  },
+  "homepage": "https://github.com/KHYehor/Application#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-passport": "^4.1.3",
+    "koa-redis": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.3",
+    "mongoose": "^5.7.12",
+    "passport-local": "^1.0.0",
+    "pm2": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1",
+    "prettier": "^1.19.1",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1"
+  }
+}
